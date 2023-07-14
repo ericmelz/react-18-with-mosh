@@ -1,14 +1,22 @@
 import ListGroup from "./components/ListGroup";
 import Alert from "./components/Alert";
 import Button from "./components/Button";
+import {useState} from "react";
 
 function App() {
-    const onButtonClick = () => { console.log("Button is pushed")};
+    const [showAlert, setShowAlert] = useState(false);
+
+    const onButtonClick = () => { setShowAlert(true) };
+    const onAlertClose = () => { setShowAlert(false) };
+
+    const alert = showAlert &&
+        <Alert onAlertClose={onAlertClose}>
+            <b>Hello World</b>
+        </Alert>;
+
     return (
         <div>
-            <Alert>
-                <b>Hello World</b>
-            </Alert>
+            {alert}
             <Button color="danger" onClick={onButtonClick}>Push Me</Button>
         </div>
     )
