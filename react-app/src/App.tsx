@@ -9,7 +9,7 @@ function App() {
             <Alert>
                 <b>Hello World</b>
             </Alert>
-            <Button onClick={onButtonClick}>Push Me</Button>
+            <Button color="danger" onClick={onButtonClick}>Push Me</Button>
         </div>
     )
 }
