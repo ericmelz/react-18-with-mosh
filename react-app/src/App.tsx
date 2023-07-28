@@ -15,10 +15,11 @@ function App() {
         </Alert>;
 
     return (
-        <div>
-            {alert}
-            <Button color="danger" onClick={onButtonClick}>Push Me</Button>
-        </div>
+        // <div>
+        //     {alert}
+        //     <Button color="danger" onClick={onButtonClick}>Push Me</Button>
+        // </div>
+        <ListGroup items={["Apple", "Orange", "Pear"]} heading={"Fruits"} onSelectItem={() => {}} />
     )
 }
 
