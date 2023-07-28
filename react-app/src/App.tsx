@@ -2,6 +2,7 @@ import ListGroup from "./components/ListGroup";
 import Alert from "./components/Alert";
 import Button from "./components/Button";
 import {useState} from "react";
+import './App.css'
 
 function App() {
     const [showAlert, setShowAlert] = useState(false);
