@@ -5,6 +5,7 @@ import {useState} from "react";
 import './App.css'
 
 import { BsFillCalendarFill } from "react-icons/bs";
+import Like from "./components/Like";
 
 function App() {
     const [showAlert, setShowAlert] = useState(false);
@@ -26,9 +27,10 @@ function App() {
         // <div>
         //     <BsFillCalendarFill color="red" size="40"/>
         // </div>
-        <div>
-            <Button onClick={() => {}}>My Button</Button>
-        </div>
+        // <div>
+        //     <Button onClick={() => {}}>My Button</Button>
+        // </div>
+        <Like onClick={() => {console.log('liked!')}} />
     )
 }
 
