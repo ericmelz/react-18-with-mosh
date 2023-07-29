@@ -4,6 +4,8 @@ import Button from "./components/Button";
 import {useState} from "react";
 import './App.css'
 
+import { BsFillCalendarFill } from "react-icons/bs";
+
 function App() {
     const [showAlert, setShowAlert] = useState(false);
 
@@ -20,7 +22,10 @@ function App() {
         //     {alert}
         //     <Button color="danger" onClick={onButtonClick}>Push Me</Button>
         // </div>
-        <ListGroup items={["Apple", "Orange", "Pear"]} heading={"Fruits"} onSelectItem={() => {}} />
+        // <ListGroup items={["Apple", "Orange", "Pear"]} heading={"Fruits"} onSelectItem={() => {}} />
+        <div>
+            <BsFillCalendarFill color="red" size="40"/>
+        </div>
     )
 }
 
