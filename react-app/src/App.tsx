@@ -23,8 +23,11 @@ function App() {
         //     <Button color="danger" onClick={onButtonClick}>Push Me</Button>
         // </div>
         // <ListGroup items={["Apple", "Orange", "Pear"]} heading={"Fruits"} onSelectItem={() => {}} />
+        // <div>
+        //     <BsFillCalendarFill color="red" size="40"/>
+        // </div>
         <div>
-            <BsFillCalendarFill color="red" size="40"/>
+            <Button onClick={() => {}}>My Button</Button>
         </div>
     )
 }
