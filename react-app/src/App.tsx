@@ -30,7 +30,7 @@ function App() {
         // <div>
         //     <Button onClick={() => {}}>My Button</Button>
         // </div>
-        <Like onClick={() => {console.log('liked!')}} />
+        <Like onClick={() => {console.log('click!')}} />
     )
 }
 

@@ -1,21 +1,20 @@
-import { BsFillCalendarFill } from "react-icons/bs";
+import {AiFillHeart, AiOutlineHeart} from "react-icons/ai";
 import {useState} from "react";
 
 interface Props {
     onClick: () => void;
 }
 
-function Like({onClick} : Props) {
+function Like({onClick}: Props) {
     const [liked, setLiked] = useState(false);
     const color = liked ? 'red' : 'blue';
     const likeOnClick = () => {
         onClick();
-        console.log('likey ' + liked);
         setLiked(!liked);
     }
-    return <div>
-        <BsFillCalendarFill color={color} size="100" onClick={likeOnClick}/>
-    </div>
+    return liked ?
+        <AiFillHeart color={color} size="100" onClick={likeOnClick}/> :
+        <AiOutlineHeart color={color} size="100" onClick={likeOnClick}/>;
 }
 
 export default Like;
